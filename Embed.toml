@@ -1,0 +1,30 @@
+# Chip and probe config
+
+[default.general]
+chip = "riscv"
+
+[default.probe]
+protocol = "Jtag"
+#speed = "1200"
+
+# Disable everything for default command
+
+[default.flashing]
+enabled = false
+
+[default.reset]
+enabled = false
+
+# Flash target
+
+[flash.flashing]
+enabled = true
+restore_unwritten_bytes = false
+
+[flash.reset]
+enabled = true
+
+# Reset target without flashing
+
+[reset.reset]
+enabled = true
